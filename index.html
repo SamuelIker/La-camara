@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Multiplayer Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+
+
+    <script>
+      // Configuración de Firebase de tu aplicación web
+      //Agregar aquí
+
+      const firebaseConfig = {
+  apiKey: "AIzaSyCK8UwtDqsfuecNv4nYtDB0J1zhb0824yY",
+  authDomain: "base-de-datos-en-tiempo-3d9ac.firebaseapp.com",
+  databaseURL: "https://base-de-datos-en-tiempo-3d9ac-default-rtdb.firebaseio.com",
+  projectId: "base-de-datos-en-tiempo-3d9ac",
+  storageBucket: "base-de-datos-en-tiempo-3d9ac.appspot.com",
+  messagingSenderId: "84709931265",
+  appId: "1:84709931265:web:5c3971769d1fdc26474300"
+
+};
+
+      // Inicializar Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="js/Player.js"></script>
+    <script src="js/Form.js"></script>
+    <script src="js/Game.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+  </body>
+</html>
